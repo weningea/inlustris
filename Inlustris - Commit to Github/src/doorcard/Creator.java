@@ -227,7 +227,7 @@ public class Creator extends JPanel {
           Statement st = conn.createStatement();
           String sql = "SELECT * from Teacher";
           ResultSet rs = st.executeQuery(sql);  
-          int rowNum=1;
+          int rowNum=2;
           int colNum=3;
           FileOutputStream outputStream = new FileOutputStream(path);  
         XSSFWorkbook workbook = new XSSFWorkbook();
