@@ -183,11 +183,11 @@ public class Creator extends JPanel {
 	    String rhost="athena.ecs.csus.edu";
 	    String host="athena.ecs.csus.edu";
 	    int rport=3306;
-	    String user="********";
-	    String password="********";
-	    String dbuserName = "*********";
-        String dbpassword = "*******";
-        String url = "jdbc:mysql://localhost:"+lport+"/test";
+	    String user="******";
+	    String password="******";
+	    String dbuserName = "******";
+        String dbpassword = "*****";
+        String url = "jdbc:mysql://localhost:"+lport+"/inlustris";
         String driverName="com.mysql.jdbc.Driver";
         Connection conn = null;
         Session session= null;
@@ -232,6 +232,8 @@ public class Creator extends JPanel {
           FileOutputStream outputStream = new FileOutputStream(path);  
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet sheet = workbook.createSheet("Faculty Door Cards");
+        sheet.setMargin(XSSFSheet.HeaderMargin, 0);
+        sheet.setMargin(XSSFSheet.FooterMargin, 0);
         
         sheet.setColumnWidth(1,colwidth);
         sheet.setColumnWidth(2,colwidth);
@@ -545,6 +547,7 @@ public class Creator extends JPanel {
 	    }
           p.finish();
 	}
+	
 	private int[] header(String name, String email, String phone, String id, String fbuild, String froom, int rowNum, int colNum, XSSFWorkbook workbook, XSSFSheet sheet)
 	{
 		Row row0 = sheet.createRow(rowNum);

@@ -146,11 +146,11 @@ public class Populator extends JPanel {
 		    String rhost="athena.ecs.csus.edu";
 		    String host="athena.ecs.csus.edu";
 		    int rport=3306;
-		    String user="*******";
-		    String password="******";
-		    String dbuserName = "********";
-	        String dbpassword = "*******";
-	        String url = "jdbc:mysql://localhost:"+lport+"/test";
+		    String user="*****";
+		    String password="*****";
+		    String dbuserName = "******";
+	        String dbpassword = "******";
+	        String url = "jdbc:mysql://localhost:"+lport+"/inlustris";
 	        String driverName="com.mysql.jdbc.Driver";
 	        Connection conn = null;
 	        Session session= null;
@@ -402,7 +402,7 @@ public class Populator extends JPanel {
 	                      
 		                   if(!rs9.next())
 		                   {
-						          String sql2 = "INSERT INTO `test`.`Course` (`TeacherName`, `Start`, `End`, `DayOfWeek`, `CourseID`, `CourseName`, `Section`, `Building`, `Room`) VALUES  ('"+faculty+"', '"+start+"', '"+end+"', '"+days+"', '"+cid+"', '"+coursename+"', '"+section+"', '"+building+"', '"+room+"')";
+						          String sql2 = "INSERT INTO `Course` (`TeacherName`, `Start`, `End`, `DayOfWeek`, `CourseID`, `CourseName`, `Section`, `Building`, `Room`) VALUES  ('"+faculty+"', '"+start+"', '"+end+"', '"+days+"', '"+cid+"', '"+coursename+"', '"+section+"', '"+building+"', '"+room+"')";
 						          int rs2 = st.executeUpdate(sql2); 
 		                   } else {
 		                      String sql8 = "UPDATE Course SET `TeacherName`='"+faculty+"', `Start`='"+start+"', `End`='"+end+"', `DayOfWeek`='"+days+"', `Building`='"+building+"', `Room`='"+room+"' WHERE CourseID='"+cid+"'";
