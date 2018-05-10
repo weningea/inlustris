@@ -184,9 +184,9 @@ public class Creator extends JPanel {
 	    String host="athena.ecs.csus.edu";
 	    int rport=3306;
 	    String user="******";
-	    String password="******";
-	    String dbuserName = "******";
-        String dbpassword = "*****";
+	    String password="*******";
+	    String dbuserName = "*******";
+        String dbpassword = "********";
         String url = "jdbc:mysql://localhost:"+lport+"/inlustris";
         String driverName="com.mysql.jdbc.Driver";
         Connection conn = null;

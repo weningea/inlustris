@@ -146,10 +146,10 @@ public class Populator extends JPanel {
 		    String rhost="athena.ecs.csus.edu";
 		    String host="athena.ecs.csus.edu";
 		    int rport=3306;
-		    String user="*****";
-		    String password="*****";
-		    String dbuserName = "******";
-	        String dbpassword = "******";
+		    String user="********";
+		    String password="********";
+		    String dbuserName = "*********";
+	        String dbpassword = "********";
 	        String url = "jdbc:mysql://localhost:"+lport+"/inlustris";
 	        String driverName="com.mysql.jdbc.Driver";
 	        Connection conn = null;
